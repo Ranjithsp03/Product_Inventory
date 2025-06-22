@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\WnsTraining\\ProductInventory\\Product_Inventory\\ProductsInventory.Api\\ProductsInventory.Api.csproj": {}
+    "R:\\ProductInventory\\Product_Inventory\\ProductsInventory.Api.csproj": {}
   },
   "projects": {
-    "C:\\WnsTraining\\ProductInventory\\Product_Inventory\\ProductsInventory.Api\\ProductsInventory.Api.csproj": {
+    "R:\\ProductInventory\\Product_Inventory\\ProductsInventory.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\WnsTraining\\ProductInventory\\Product_Inventory\\ProductsInventory.Api\\ProductsInventory.Api.csproj",
+        "projectUniqueName": "R:\\ProductInventory\\Product_Inventory\\ProductsInventory.Api.csproj",
         "projectName": "ProductsInventory.Api",
-        "projectPath": "C:\\WnsTraining\\ProductInventory\\Product_Inventory\\ProductsInventory.Api\\ProductsInventory.Api.csproj",
-        "packagesPath": "C:\\Users\\u499160\\.nuget\\packages\\",
-        "outputPath": "C:\\WnsTraining\\ProductInventory\\Product_Inventory\\ProductsInventory.Api\\obj\\",
+        "projectPath": "R:\\ProductInventory\\Product_Inventory\\ProductsInventory.Api.csproj",
+        "packagesPath": "C:\\Users\\ranji\\.nuget\\packages\\",
+        "outputPath": "R:\\ProductInventory\\Product_Inventory\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\u499160\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ranji\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -98,7 +105,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\dotnet-sdk-9.0.300-win-x64\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

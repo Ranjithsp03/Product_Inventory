@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.AspNetCore.Authorization;
 namespace ProductsInventory.Api.Controllers;
 
+using Microsoft.AspNetCore.Authorization;
 using ProductsInventory.Api.Data.DTOs;
 using ProductsInventory.Api.Models;
 using ProductsInventory.Api.Models.Requests;
@@ -38,6 +39,7 @@ public class ProductsController : ControllerBase
     //     var product = _producservice.GetAllProducts();
     //     return Ok(product);
     // }
+    [Authorize]
     
      [HttpPost]
     public async Task<IActionResult> CreateProduct([FromBody] CreateProductRequest request)
@@ -51,6 +53,7 @@ public class ProductsController : ControllerBase
     }
 
     // Get List of Products
+      [Authorize]
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
@@ -59,6 +62,7 @@ public class ProductsController : ControllerBase
     }
 
     // Get a Product by Id
+      [Authorize]
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(Guid id)
     {
@@ -77,7 +81,7 @@ public class ProductsController : ControllerBase
     //     Product product1 = _productservice.UpdateProduct(id,product);
     //     return Ok(product1);
     // }
-
+  [Authorize]
      [HttpPut("{id}")]
     public async Task<IActionResult> UpdateProduct(Guid id, [FromBody] UpdateProductRequest request)
     {
@@ -88,7 +92,7 @@ public class ProductsController : ControllerBase
         }
         return Ok(new ApiResponse<ProductDto>(true, "Product Updated Successfully", result));
     }
-
+  [Authorize]
      [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteProduct(Guid id)
     {
